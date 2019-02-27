@@ -1,0 +1,43 @@
+.education-name {
+    font-size: @font-size-huge;
+    font-weight: bold;
+    margin: @padding-large-vertical 0 @padding-small-vertical 0;
+}
+
+.education {
+    position: relative;
+}
+
+.education .education-name {
+	font-size: 20px;
+}
+
+.education .profile-image {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    background-image: url(https://raw.githubusercontent.com/aleen42/https-resources/master/alien_profile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 178px;
+    height: 178px;
+}
+
+.education-major,
+.education-honor {
+    list-style-type: none;
+    line-height: @line-height-base;
+    margin: 0;
+    padding: 0;
+}
+
+.experience-task-content {
+	margin: 6px 0 6px 27px;
+}
+
+.set-section-icon(education, @fa-var-book);
+.set-timeline-icon(education-undergraduate, @fa-var-bookmark);
+.set-li-icon(experience-task-content, @fa-var-tags);
+.set-li-icon(education-major, @fa-var-graduation-cap);
+.set-li-icon(education-honor, @fa-var-trophy);

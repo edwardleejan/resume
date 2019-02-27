@@ -1,0 +1,36 @@
+{
+  "name": "aleen42-resume",
+  "version": "1.0.0",
+  "description": "Read resume data from a JSON file and generate a static web page.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp server"
+  },
+  "author": "Aleen <aleen42@vip.qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aleen42/resume.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-gh-pages": "0.5.2",
+    "gulp-jade": "1.0.0",
+    "gulp-less": "3.0.0",
+    "gulp-live-server": "0.0.23",
+    "gulp-load-plugins": "0.10.0",
+    "gulp-minify-css": "1.1.6",
+    "gulp-sourcemaps": "1.5.2",
+    "highlight.js": "8.6.0",
+    "jade": "1.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/aleen42/resume/issues"
+  },
+  "homepage": "https://github.com/aleen42/resume",
+  "keywords": [
+    "resume"
+  ]
+}
