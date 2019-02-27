@@ -1,0 +1,219 @@
+{
+  "data_lang": "zh-CN",
+  "ga_id": "UA-63818301-2",
+  "resume_title": "aleen42 | Resume",
+  "name": "徐沛文",
+  "job_description": [
+    "前端工程师",
+    "软件工程师"
+  ],
+  "contact": {
+    "email": "aleen42@vip.qq.com",
+    "wechat": {
+      "id": "Aleen_me",
+      "qrcode": "static/wechat.svg"
+    },
+    "sinaweibo": {
+      "id": "aleen42",
+      "url": "http://weibo.com/234835584"
+    },
+    "github": {
+      "id": "aleen42"
+    },
+    "phone": "185-7589-3728"
+  },
+  "links": [
+    {
+      "type": "pdf",
+      "url": "static/aleen42.pdf"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/aleen42"
+    },
+    {
+      "type": "lofter",
+      "url": "http://aleen42.lofter.com/"
+    }
+  ],
+  "education": [
+    {
+      "type": "undergraduate",
+      "name": "西安电子科技大学",
+      "major": "软件工程",
+      "start": "2012",
+      "end": "2016",
+      "honor": [
+        "ACM 华为杯校赛**二等奖**",
+        "2012 - 2015 学年度校**二等奖学金**"
+      ]
+    }
+  ],
+  "language": [
+    {
+      "type": "english",
+      "certificate": [
+        {
+          "type": "CET-4",
+          "full": "710",
+          "score": "545"
+        },
+        {
+          "type": "CET-6",
+          "full": "710",
+          "score": "510"
+        }
+      ],
+      "description": [
+        "能流畅阅读英文专业书籍、文档及其他资料",
+        "参加有翻译活动（掘金翻译计划），并在个人维基上发布",
+        "能在 StackOverflow 、GitHub 等技术社区上进行讨论"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "type": "internship",
+      "techtype": "frontend",
+      "place": "声牙科技 Soundtooth",
+      "start": "2015.07",
+      "end": "2016.12",
+      "name": "Web 端开发",
+      "description": [
+        "基于 [`Laravel`](https://laravel.com/) 及 [`ThinkPHP`](https://github.com/top-think/thinkphp) 框架下进行 API 接口开发以及服务器渲染页面",
+        "使用 [`jPlayer`](https://github.com/happyworm/jPlayer/) 自主开发网页播放器，并参与公司前期 Voice In 网站的开发",
+        "使用 [`Node.js`](https://nodejs.org/en/) 自主开发 [`GitBook`](https://www.gitbook.com/) 扩展。<br/>[`gitbook-footer`](https://github.com/aleen42/gitbook-footer) 以及 [`gitbook-treeview`](https://github.com/aleen42/gitbook-treeview)。"
+      ]
+    },
+    {
+      "type": "fulltime",
+      "techtype": "other",
+      "place": "声牙科技 Soundtooth",
+      "start": "2015.11",
+      "end": "2016.12",
+      "name": "视频处理开发",
+      "description": [
+        "基于 OpenCV 上构建了一套中间件 [`LightOpenCV`](https://github.com/aleen42/LightOpenCV)，并基本实现视频动态植入内容"
+      ]
+    },
+    {
+      "type": "project",
+      "techtype": "frontend",
+      "project_type": "personal",
+      "name": "Personal Wiki",
+      "demo": "https://aleen42.gitbooks.io/personalwiki/content/",
+      "source": "https://github.com/aleen42/PersonalWiki",
+      "description": [
+        "基于 [`GitBook`](https://www.gitbook.com/) 构建，并采用 [`Markdown`](https://guides.github.com/features/mastering-markdown/) 语言进行书写的一本个人维基百科"
+      ],
+      "stack": [
+        "GitBook",
+        "Markdown"
+      ]
+    },
+    {
+      "type": "project",
+      "techtype": "frontend",
+      "project_type": "personal",
+      "name": "CLS - Code Line Statistic for GitHub",
+      "source": "https://github.com/aleen42/CLS",
+      "description": [
+        "一个基于 [`Node.js`](https://nodejs.org/en/)，用于统计个人 [`GitHub`](https://github.com/) 仓库中代码数目的命令行工具"
+      ],
+      "stack": [
+        "Node.js",
+        "svn"
+      ]
+    },
+    {
+      "type": "project",
+      "techtype": "frontend",
+      "project_type": "personal",
+      "name": "sound.js",
+      "demo": "http://aleen42.github.io/example/sound/index.html",
+      "source": "https://github.com/aleen42/sound.js",
+      "description": [
+        "基于 [`React`](https://facebook.github.io/react/) + [`Webpack`](https://webpack.github.io/) 所编写的一个项目。主要用于 [`Web Audio`](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) 的研究"
+      ],
+      "stack": [
+        "ReactJS"
+      ]
+    },
+    {
+      "type": "project",
+      "techtype": "frontend",
+      "project_type": "personal",
+      "name": "transformMatrix3D",
+      "demo": "http://www.soundtooth.cn/mediain/1",
+      "source": "https://github.com/aleen42/transformMatrix3D",
+      "description": [
+        "基于 [`CSS3`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) 的 [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 技术实现视频动态植入内容的渲染部分"
+      ],
+      "stack": [
+        "css"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "type": "frontend",
+      "item": [
+        {
+          "summary": "`HTML` / `CSS`",
+          "description": [
+            "能够编写语义化的 `HTML`，且代码布局清晰。",
+            "能通过个人的 HTML 查找手册，快速定位开发中所遇到的问题",
+            "能使用已标准化的 `HTML5` / `CSS3` 新特性进行业务逻辑开发",
+            "CSS 开发部分遵循 `BEM` 命名规则，并有自己的规范"
+          ]
+        },
+        {
+          "summary": "`ECMAScript`（`JavaScript`）",
+          "description": [
+            "较为熟悉 `ECMAScript`(`JavaScript`)，并对 ES6 部分标准有所了解",
+            "JavaScript 开发严格遵循自己的一套开发规范。该规范是基于部分大公司的规范所总结，如 Airbnb、Idiomatic 等。"
+          ]
+        },
+        {
+          "summary": "`React + Webpack`",
+          "description": [
+            "熟悉分析并设计 `ReactJS` 中组件间的数据流动",
+            "掌握 `Webpack` 的构建功能，并了解 `Router` 及 `Redux`。"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "backend",
+      "item": [
+        {
+          "summary": "`PHP`",
+          "description": [
+            "熟悉使用 `Laravel` 框架搭建服务器后台，并书写 API",
+            "有使用 `ThinkPHP` 建立简单后台管理系统的经验"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "miscellaneous",
+      "item": [
+        "两年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
+        "两年设计经验，能使用 `Photoshop` / `Illustrator` 完成复杂平面设计",
+        "熟悉使用 `Git` / `GitHub` / `Gitter` / `GitBook` 等协助开发工具",
+        "..."
+      ]
+    }
+  ],
+  "about": [
+    {
+      "type": "links",
+      "item": [
+        "[`Website`](http://aleen42.github.io/pc.html)",
+        "[`Personal Wiki`](https://aleen42.gitbooks.io/personalwiki/content/)",
+        "[`JavaScript Guide`](https://aleen42.gitbooks.io/javascript/content/)",
+        "[`Translations`](https://aleen42.gitbooks.io/personalwiki/content/translation/translation.html)"
+      ]
+    }
+  ]
+}
