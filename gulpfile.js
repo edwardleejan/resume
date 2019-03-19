@@ -1,10 +1,11 @@
-var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
+const gulp = require('gulp');
+const plugins = require('gulp-load-plugins')();
 
-var path = require('path');
-var gls = require('gulp-live-server');
+const path = require('path');
+const gls = require('gulp-live-server');
 
-var server = gls.static('dist', 8000);
+const port = 8080;
+const server = gls.static('dist', port);
 
 /**************** Utility **********************/
 function highlight(str) {
@@ -15,16 +16,16 @@ function highlight(str) {
 
 /******************* Jade to html ***********/
 function getLocals() {
-  var resumeData = require('./resume.json');
-  var localePath = './i18n/' + resumeData.data_lang + '/dict.js';
-  var locals = require(localePath);
+  const resumeData = require('./resume.json');
+  const localePath = './i18n/' + resumeData.data_lang + '/dict.js';
+  const locals = require(localePath);
 
   // remove cache
   delete require.cache[require.resolve('./resume.json')];
   delete require.cache[require.resolve(localePath)];
 
   // integrate the context
-  for (var item in resumeData) {
+  for (let item in resumeData) {
     locals[item] = resumeData[item];
   }
 
@@ -33,14 +34,12 @@ function getLocals() {
   return locals;
 }
 
-gulp.task('jade', function() {
-  return gulp.src('./src/jade/index.jade')
-    .pipe(plugins.jade({ locals: getLocals() }))
-    .pipe(gulp.dest('./dist/'));
-});
+gulp.task('jade', () => gulp.src('./src/jade/index.jade')
+    .pipe(plugins.jade({locals: getLocals()}))
+    .pipe(gulp.dest('./dist/')));
 
 /************* less to css  ********************/
-var lessPath = [path.join(__dirname, 'src', 'less', 'includes'),
+const lessPath = [path.join(__dirname, 'src', 'less', 'includes'),
                 path.join(__dirname, 'src', 'less', 'components')];
 
 function less2css(srcPath, destPath, debug) {
@@ -58,29 +57,27 @@ function less2css(srcPath, destPath, debug) {
   }
 }
 
-gulp.task('less', function() {
+gulp.task('less', () => {
   less2css('./src/less/questions.less', './dist/questions/');
   less2css('./src/less/index.less', './dist/');
 });
 
-gulp.task('less-debug', function() {
+gulp.task('less-debug', () => {
   less2css('./src/less/questions.less', './dist/questions/', true);
   less2css('./src/less/index.less', './dist/', true);
 });
 
 /************** Static assets **************/
-gulp.task('static', function() {
-  return gulp.src('./static/**/*', { base: 'static' })
-    .pipe(gulp.dest('./dist/static/'));
-});
+gulp.task('static', () => gulp.src('./static/**/*', {base: 'static'})
+    .pipe(gulp.dest('./dist/static/')));
 
 /****************** Watch ****************/
-gulp.task('watch', ['server'], function() {
+gulp.task('watch', ['server'], () => {
   gulp.watch(['./src/**/*.jade', './resume.json', './i18n/**/*.js'],
              ['jade']);
   gulp.watch('./static/**/*', ['static']);
   gulp.watch('./src/**/*.less', ['less-debug']);
-  gulp.watch('./dist/**/*', function() {
+  gulp.watch('./dist/**/*', () => {
     server.notify.apply(server, arguments);
   });
 });
@@ -90,18 +87,20 @@ gulp.task('build', ['jade', 'less-debug', 'static']);
 gulp.task('build-for-deploy', ['jade', 'less', 'static']);
 
 /****************** Server ****************/
-gulp.task('serve', function () {
-  server.start();
+gulp.task('serve', ['build'], () => {
+  server.start().then(() => {}, () => {}, () => {
+      const open = process.platform === 'darwin' ? 'open' : (process.platform === 'win32' ? 'start' : 'xdg-open');
+      // open default browser to visit
+      require('child_process').exec(`${open} http://localhost:${port}`);
+  });
 });
 
-gulp.task('server', ['build', 'serve']);
+gulp.task('server', ['serve']);
 gulp.task('preview', ['build-for-deploy', 'serve']);
 
 /****************** Deploy ****************/
-gulp.task('deploy', ['build-for-deploy'], function() {
-  return gulp.src('./dist/**/*')
-    .pipe(plugins.ghPages());
-});
+gulp.task('deploy', ['build-for-deploy'], () => gulp.src('./dist/**/*')
+    .pipe(plugins.ghPages()));
 
 /****************** Default ****************/
 gulp.task('default', ['server', 'watch']);
