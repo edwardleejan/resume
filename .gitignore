@@ -65,3 +65,6 @@ typings/
 
 # output
 dist
+
+# npm
+package-lock.json

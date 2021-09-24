@@ -1,51 +1,39 @@
 {
   "data_lang": "zh-CN",
   "ga_id": "UA-63818301-2",
-  "resume_title": "aleen42 | Resume",
-  "name": "徐沛文",
+  "resume_title": "Edward | Resume",
+  "name": "李健华",
   "job_description": [
-    "前端工程师",
+    "后端工程师",
     "软件工程师"
   ],
   "contact": {
-    "email": "aleen42@vip.qq.com",
+    "email": "edwardlee@88.com",
     "wechat": {
-      "id": "Aleen_me",
-      "qrcode": "static/wechat.svg"
-    },
-    "sinaweibo": {
-      "id": "aleen42",
-      "url": "http://weibo.com/234835584"
+      "id": "My_Edward_Lee",
+      "qrcode": "static/wechat.jpg"
     },
     "github": {
-      "id": "aleen42"
+      "id": "edwardleejan"
     },
-    "phone": "185-7589-3728"
+    "phone": "158-7657-6897"
   },
   "links": [
     {
       "type": "pdf",
-      "url": "static/aleen42.pdf"
-    },
-    {
-      "type": "linkedin",
-      "url": "https://www.linkedin.com/in/aleen42"
-    },
-    {
-      "type": "lofter",
-      "url": "http://aleen42.lofter.com/"
+      "url": "static/edward.pdf"
     }
   ],
   "education": [
     {
       "type": "undergraduate",
-      "name": "西安电子科技大学",
-      "major": "软件工程",
-      "start": "2012",
-      "end": "2016",
+      "name": "广东石油化工学院",
+      "major": "网络工程",
+      "start": "2008",
+      "end": "2011",
       "honor": [
-        "ACM 华为杯校赛**二等奖**",
-        "2012 - 2015 学年度校**二等奖学金**"
+        "2009 年下学期三等奖学金",
+        "2010 年上学期三等奖学金"
       ]
     }
   ],
@@ -54,103 +42,66 @@
       "type": "english",
       "certificate": [
         {
-          "type": "CET-4",
-          "full": "710",
-          "score": "545"
-        },
-        {
-          "type": "CET-6",
-          "full": "710",
-          "score": "510"
+          "type": "CET-4"
         }
       ],
       "description": [
-        "能流畅阅读英文专业书籍、文档及其他资料",
-        "参加有翻译活动（掘金翻译计划），并在个人维基上发布",
-        "能在 StackOverflow 、GitHub 等技术社区上进行讨论"
+        "粤语/普通话",
+        "英语阅读流畅，平时较多查看英语技术文档及偶尔参与开源社区问题讨论",
+        "英语口语简单交流"
       ]
     }
   ],
   "experience": [
     {
-      "type": "internship",
-      "techtype": "frontend",
-      "place": "声牙科技 Soundtooth",
-      "start": "2015.07",
-      "end": "2016.12",
-      "name": "Web 端开发",
+      "type": "fulltime",
+      "techtype": "backend",
+      "place": "论客科技（广州）有限公司 | Coremail",
+      "start": "2015.05",
+      "end": "NOW",
+      "name": "Java 资深开发工程师",
       "description": [
-        "基于 [`Laravel`](https://laravel.com/) 及 [`ThinkPHP`](https://github.com/top-think/thinkphp) 框架下进行 API 接口开发以及服务器渲染页面",
-        "使用 [`jPlayer`](https://github.com/happyworm/jPlayer/) 自主开发网页播放器，并参与公司前期 Voice In 网站的开发",
-        "使用 [`Node.js`](https://nodejs.org/en/) 自主开发 [`GitBook`](https://www.gitbook.com/) 扩展。<br/>[`gitbook-footer`](https://github.com/aleen42/gitbook-footer) 以及 [`gitbook-treeview`](https://github.com/aleen42/gitbook-treeview)。"
+        "邮件系统核心代码开发与维护<br/>主要使用 Java 开发，自研 NIO 服务，自研 MVC 框架",
+        "SMC 安全信息系统功能模块设计开发及项目管理",
+        "邮件投递系统 V3.0 投递性能改造方案设计和开发",
+        "日程同步系统方案沟通及对接，程序设计与开发维护"
       ]
     },
     {
       "type": "fulltime",
-      "techtype": "other",
-      "place": "声牙科技 Soundtooth",
-      "start": "2015.11",
-      "end": "2016.12",
-      "name": "视频处理开发",
+      "techtype": "backend",
+      "place": "广州文思海辉科技有限公司",
+      "start": "2014.06",
+      "end": "2015.05",
+      "name": "Java 开发工程师",
       "description": [
-        "基于 OpenCV 上构建了一套中间件 [`LightOpenCV`](https://github.com/aleen42/LightOpenCV)，并基本实现视频动态植入内容"
+        "负责账单系统的开发及测试"
+      ]
+    },
+    {
+      "type": "fulltime",
+      "techtype": "backend",
+      "place": "广州华南资讯科技有限公司",
+      "start": "2011.12",
+      "end": "2014.06",
+      "name": "Java 开发工程师",
+      "description": [
+        "广东省常住人口系统日常的开发及维护",
+        "广东省级应用日常的开发及维护"
       ]
     },
     {
       "type": "project",
-      "techtype": "frontend",
+      "techtype": "backend",
       "project_type": "personal",
-      "name": "Personal Wiki",
-      "demo": "https://aleen42.gitbooks.io/personalwiki/content/",
-      "source": "https://github.com/aleen42/PersonalWiki",
+      "name": "JSQL | JDBC SQL Framework",
+      "source": "https://github.com/icuter/jsql",
       "description": [
-        "基于 [`GitBook`](https://www.gitbook.com/) 构建，并采用 [`Markdown`](https://guides.github.com/features/mastering-markdown/) 语言进行书写的一本个人维基百科"
+        "一个基于 Java 开发的 JDBC 框架，使用建造者模式代替传统的 SQL 拼接",
+        "适配的数据库包括 Cubrid SQLite DB2 Derby H2 MariaDB MySQL Oracle PostgreSQL SQLServer2012"
       ],
       "stack": [
-        "GitBook",
-        "Markdown"
-      ]
-    },
-    {
-      "type": "project",
-      "techtype": "frontend",
-      "project_type": "personal",
-      "name": "CLS - Code Line Statistic for GitHub",
-      "source": "https://github.com/aleen42/CLS",
-      "description": [
-        "一个基于 [`Node.js`](https://nodejs.org/en/)，用于统计个人 [`GitHub`](https://github.com/) 仓库中代码数目的命令行工具"
-      ],
-      "stack": [
-        "Node.js",
-        "svn"
-      ]
-    },
-    {
-      "type": "project",
-      "techtype": "frontend",
-      "project_type": "personal",
-      "name": "sound.js",
-      "demo": "http://aleen42.github.io/example/sound/index.html",
-      "source": "https://github.com/aleen42/sound.js",
-      "description": [
-        "基于 [`React`](https://facebook.github.io/react/) + [`Webpack`](https://webpack.github.io/) 所编写的一个项目。主要用于 [`Web Audio`](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) 的研究"
-      ],
-      "stack": [
-        "ReactJS"
-      ]
-    },
-    {
-      "type": "project",
-      "techtype": "frontend",
-      "project_type": "personal",
-      "name": "transformMatrix3D",
-      "demo": "http://www.soundtooth.cn/mediain/1",
-      "source": "https://github.com/aleen42/transformMatrix3D",
-      "description": [
-        "基于 [`CSS3`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) 的 [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 技术实现视频动态植入内容的渲染部分"
-      ],
-      "stack": [
-        "css"
+        "Java"
       ]
     }
   ],

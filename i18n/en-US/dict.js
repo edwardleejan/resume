@@ -1,6 +1,6 @@
 module.exports = {
     experience_type: {
-        "internship": "(internship)"，
+        "internship": "(internship)",
         "fulltime": "（fulltime）"
     },
     profile_type: {
