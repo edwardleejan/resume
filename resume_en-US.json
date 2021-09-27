@@ -1,11 +1,11 @@
 {
-  "data_lang": "zh-CN",
+  "data_lang": "en-US",
   "ga_id": "UA-63818301-2",
   "resume_title": "Edward | Resume",
-  "name": "李健华",
+  "name": "Edward Lee",
   "job_description": [
-    "后端工程师",
-    "软件工程师"
+    "Senior Backend Developer",
+    "Software Engineer"
   ],
   "contact": {
     "email": "edwardlee@88.com",
@@ -50,6 +50,20 @@
       ]
     },
     {
+      "type": "project",
+      "techtype": "backend",
+      "project_type": "personal",
+      "name": "JSQL | JDBC SQL Framework",
+      "source": "https://github.com/icuter/jsql",
+      "description": [
+        "一个基于 Java 开发的 JDBC 框架，使用建造者模式代替传统的 SQL 拼接",
+        "适配的数据库包括 Cubrid、SQLite、DB2、Derby、H2、MariaDB、MySQL、Oracle、PostgreSQL、SQLServer2012"
+      ],
+      "stack": [
+        "Java"
+      ]
+    },
+    {
       "type": "fulltime",
       "techtype": "backend",
       "place": "广州文思海辉科技有限公司",
@@ -71,20 +85,6 @@
         "`广东省常住人口系统`<p/>项目描述: 基于公安内网对公安行业的户口登记，户口审批，身份证管理，地址管理，各类证件和报表进行开发改造。系统中业务逻辑复杂，使用润乾工具实现全打和套打生成相应的统计报表<p/>负责内容: 证件打印、业务代码开发及报表统计数据处理及打印",
         "`广东省级应用系统`<p/>项目描述: 基于原来的省级应用系统做二次开发，用于政府内部人员对身份证打包制证、特殊人员登记等等的业务管理<p/>负责内容: 证件打印、业务代码开发"
       ]
-    },
-    {
-      "type": "project",
-      "techtype": "backend",
-      "project_type": "personal",
-      "name": "JSQL | JDBC SQL Framework",
-      "source": "https://github.com/icuter/jsql",
-      "description": [
-        "一个基于 Java 开发的 JDBC 框架，使用建造者模式代替传统的 SQL 拼接",
-        "适配的数据库包括 Cubrid SQLite DB2 Derby H2 MariaDB MySQL Oracle PostgreSQL SQLServer2012"
-      ],
-      "stack": [
-        "Java"
-      ]
     }
   ],
   "skills": [
@@ -92,14 +92,13 @@
       "type": "backend",
       "item": [
         {
-          "summary": "`Java / Server`",
+          "summary": "`Java`",
           "description": [
+            "熟悉 Java 类库，并发编程，Java NIO",
+            "熟悉并常用 Spring、SpringBoot、SpringMVC",
+            "熟悉设计模式",
             "了解 JVM 的 GC 内存回收器 / 字节码 / 类加载器",
-            "熟悉并发编程",
-            "Spring / SpringMVC / SpringBoot",
-            "熟悉 Java NIO",
-            "了解 Netty 的基本原理及使用",
-            "熟悉设计模式"
+            "了解 Netty 的基本原理及使用"
           ]
         },
         {
@@ -114,19 +113,19 @@
         {
           "summary": "`Distributed Technology`",
           "description": [
-            "了解 Dubbo 服务发现注册及 RPC 调用",
-            "了解 Spring Cloud 网关、注册中心、配置中心、服务治理、限流熔断控制",
+            "Know about service discovery/register/RPC invoking of <em>Dubbo</em>",
+            "Know about <em>Spring Cloud</em> gateway、Ereka register center、Apollo config center、Erix flow-limiting and fusing control",
             "了解 Zookeeper 注册选举的基本原理"
           ]
         },
         {
           "summary": "`Algorithm`",
           "description": [
-            "最短路径算法 | Dijkstra / KMP / AC 自动机",
+            "最短路径算法 | Dijkstra、字符串匹配 | KMP、多模字符串匹配 | AC 自动机",
             "布隆过滤器 | Boom Filter",
             "哈夫曼编码 | Huffman coding",
-            "回溯算法 | Back Tracking / 贪心算法 | Greedy / 动态规划 | DP",
-            "数组 | Array / 链表 | Link / 栈 | Stack / 树 | Tree / 图 | Graph"
+            "回溯算法 | Back Tracking、贪心算法 | Greedy、动态规划 | DP",
+            "数组 | Array、链表 | Link、栈 | Stack、树 | Tree、图 | Graph"
           ]
         },
         {
@@ -136,7 +135,6 @@
             "TCP",
             "Websocket",
             "JSON / MessagePack",
-            "ProtoBuff",
             "MIME",
             "IMAP/POP3/SMTP",
             "CalDAV"

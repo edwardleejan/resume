@@ -15,13 +15,13 @@ function highlight(str) {
 }
 
 /******************* Jade to html ***********/
-function getLocals() {
-  const resumeData = require('./resume.json');
+function getLocals(locale) {
+  const resumeData = require(`./resume_${locale}.json`);
   const localePath = './i18n/' + resumeData.data_lang + '/dict.js';
   const locals = require(localePath);
 
   // remove cache
-  delete require.cache[require.resolve('./resume.json')];
+  delete require.cache[require.resolve(`./resume_${locale}.json`)];
   delete require.cache[require.resolve(localePath)];
 
   // integrate the context
@@ -34,9 +34,13 @@ function getLocals() {
   return locals;
 }
 
-gulp.task('jade', () => gulp.src('./src/jade/index.jade')
-    .pipe(plugins.jade({locals: getLocals()}))
-    .pipe(gulp.dest('./dist/')));
+gulp.task('jade_zh_CN', () => gulp.src('./src/jade/index.jade')
+    .pipe(plugins.jade({locals: getLocals('zh-CN')}))
+    .pipe(gulp.dest('./dist/zh')));
+
+gulp.task('jade_en_US', () => gulp.src('./src/jade/index.jade')
+    .pipe(plugins.jade({locals: getLocals('en-US')}))
+    .pipe(gulp.dest('./dist/en')));
 
 /************* less to css  ********************/
 const lessPath = [path.join(__dirname, 'src', 'less', 'includes'),
@@ -68,13 +72,12 @@ gulp.task('less-debug', () => {
 });
 
 /************** Static assets **************/
-gulp.task('static', () => gulp.src('./static/**/*', {base: 'static'})
-    .pipe(gulp.dest('./dist/static/')));
+gulp.task('static', () => gulp.src('./static/**/*', {base: 'static'}).pipe(gulp.dest('./dist/static/')));
 
 /****************** Watch ****************/
 gulp.task('watch', ['server'], () => {
-  gulp.watch(['./src/**/*.jade', './resume.json', './i18n/**/*.js'],
-             ['jade']);
+  gulp.watch(['./src/**/*.jade', './resume*', './i18n/**/*.js'],
+             ['jade_en_US', 'jade_zh_CN']);
   gulp.watch('./static/**/*', ['static']);
   gulp.watch('./src/**/*.less', ['less-debug']);
   gulp.watch('./dist/**/*', () => {
@@ -83,15 +86,15 @@ gulp.task('watch', ['server'], () => {
 });
 
 /****************** Build ****************/
-gulp.task('build', ['jade', 'less-debug', 'static']);
-gulp.task('build-for-deploy', ['jade', 'less', 'static']);
+gulp.task('build', ['jade_en_US', 'jade_zh_CN', 'less-debug', 'static']);
+gulp.task('build-for-deploy', ['jade_en_US', 'jade_zh_CN', 'less', 'static']);
 
 /****************** Server ****************/
 gulp.task('serve', ['build'], () => {
   server.start().then(() => {}, () => {}, () => {
       const open = process.platform === 'darwin' ? 'open' : (process.platform === 'win32' ? 'start' : 'xdg-open');
       // open default browser to visit
-      require('child_process').exec(`${open} http://localhost:${port}`);
+      require('child_process').exec(`${open} http://localhost:${port}/zh`);
   });
 });
 
@@ -99,8 +102,7 @@ gulp.task('server', ['serve']);
 gulp.task('preview', ['build-for-deploy', 'serve']);
 
 /****************** Deploy ****************/
-gulp.task('deploy', ['build-for-deploy'], () => gulp.src('./dist/**/*')
-    .pipe(plugins.ghPages()));
+gulp.task('deploy', ['build-for-deploy'], () => gulp.src('./dist/**/*').pipe(plugins.ghPages()));
 
 /****************** Default ****************/
 gulp.task('default', ['server', 'watch']);

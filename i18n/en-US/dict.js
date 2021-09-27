@@ -58,5 +58,12 @@ module.exports = {
             "en": "About me"
         }
     },
-    lt_ie8_comment: "You are using IE8 or lower version of IE, which is not supported."
+    lt_ie8_comment: "You are using IE8 or lower version of IE, which is not supported.",
+    dict: {
+        source_code: "源代码",
+        demo: "Demo"
+    },
+    project_type: {
+        "personal": "个人开源项目"
+    }
 };

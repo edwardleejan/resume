@@ -64,6 +64,6 @@ module.exports = {
         demo: "Demo"
     },
     project_type: {
-        "personal": "个人项目"
+        "personal": "个人开源项目"
     }
 };

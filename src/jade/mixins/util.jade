@@ -22,7 +22,7 @@ mixin blog(data)
     a(href=data.url)= data.url
 
 mixin qrcode(data)
-  img.qrcode-img(src=data.qrcode, alt=data.id)&attributes(attributes)
+  img.qrcode-img(src="../" + data.qrcode, alt=data.id)&attributes(attributes)
 
 mixin wechat(data)
   li.contact-wechat&attributes(attributes)= data.id
