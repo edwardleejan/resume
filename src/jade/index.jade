@@ -44,15 +44,6 @@ block skills
           span.skills-type= skill_type[item.type]
         +#{"skills_" + item.type}(item)
 
-block about
-  +section("about", true)
-    each item in about
-      li.timeline-item(class="about-" + item.type)
-        h3.timeline-title
-          span.about-type= about_type[item.type]
-        +#{"about_" + item.type}(item)
-
-
 block links
     ul.links
       each link in links

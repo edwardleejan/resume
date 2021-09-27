@@ -11,6 +11,7 @@ module.exports = {
         "desktop": "Desktop Development",
         "frontend": "Frontend Development",
         "backend": "Backend Development",
+        "codemanager": "Code Manager",
         "miscellaneous": "Miscellaneous",
         "hobbies": "Hobbies",
         "postproduction": "Post Production",
@@ -53,8 +54,8 @@ module.exports = {
             "en": "Skills"
         },
         "about": {
-            "ch": "about",
-            "en": "about"
+            "ch": "Introduce",
+            "en": "About me"
         }
     },
     lt_ie8_comment: "You are using IE8 or lower version of IE, which is not supported."

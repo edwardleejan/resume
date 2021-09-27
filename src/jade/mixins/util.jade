@@ -93,6 +93,12 @@ mixin skills_miscellaneous(item)
         li.skills-item-description
           span!= highlight(desc)
 
+mixin skills_codemanager(item)
+    ul.skills-description.skills-codemanager.timeline-content
+      each desc in item.item
+        li.skills-item-description
+          span!= highlight(desc)
+
 mixin skills_hobbies(item)
     ul.skills-description.skills-hobbies.timeline-content
       each desc in item.item

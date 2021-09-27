@@ -10,9 +10,10 @@ module.exports = {
         "video": "视频图像处理",
         "desktop": "Desktop 前端",
         "frontend": "Web 前端",
-        "backend": "Web 后端",
+        "backend": "Java 后端",
         "postproduction": "后期制作",
         "director": "编导",
+        "codemanager": "代码管理",
         "miscellaneous": "其他",
         "hobbies": "爱好"
     },
@@ -53,8 +54,8 @@ module.exports = {
             "en": "Skills"
         },
         "about": {
-            "ch": "相关信息",
-            "en": "About"
+            "ch": "简介",
+            "en": "About me"
         }
     },
     lt_ie8_comment: "你正在使用 IE8 或更老的古董浏览器，还是快升级或者换浏览器吧~",

@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build",
-    "dev": "gulp server"
+    "dev": "gulp server",
+    "watch": "gulp watch"
   },
   "author": "Aleen <aleen42@vip.qq.com>",
   "license": "MIT",

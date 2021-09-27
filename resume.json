@@ -11,7 +11,7 @@
     "email": "edwardlee@88.com",
     "wechat": {
       "id": "My_Edward_Lee",
-      "qrcode": "static/wechat.jpg"
+      "qrcode": "static/avatar.jpeg"
     },
     "github": {
       "id": "edwardleejan"
@@ -22,6 +22,148 @@
     {
       "type": "pdf",
       "url": "static/edward.pdf"
+    }
+  ],
+  "profile": [
+    {
+      "type": "profile",
+      "description": [
+        "从事 Java 软件开发已有 9 年工作经验，现在论客科技工作，担任部门内其中一个团队的开发组长，帮助团队攻克技术难点，保证项目的稳定",
+        "本人工作认真负责、工作专注、注重协作，善于团队工作，适应能力强，有较强的自我学习推动力，在现职公司曾获三年的优秀员工奖项",
+        "偶尔涉足前端开发，是一个半全栈开发工程师，但现阶段职业规划中是以架构师为目标"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "type": "fulltime",
+      "techtype": "backend",
+      "place": "论客科技（广州）有限公司 | Coremail",
+      "start": "2015.05",
+      "end": "NOW",
+      "name": "Java 资深开发工程师",
+      "description": [
+        "`Coremail 邮件系统`<p/>项目描述: 面向企业的邮箱系统，主要功能包括邮件收发，组织管理，日程，二次验证，企业网盘，邮件代收等并提供SMTP/IMAP/POP3服务，划分为前端、Java 后端及 C++ 大后端，基于运维平台、客户及产品三大需求实现产品迭代。前端包括浏览器网页、Window 客户端、手机移动端等产品，Java 后端主要基于 Java NIO、Socket 网络编程自主研发私有协议高性能服务器支持，并自主研发 MVC 框架供给 PC 端和移动接口调用，使用少量框架，定制化的接口使用 Spring / Spring-boot / Apache-cxf 框架实现<p/>负责内容: 主要负责 Java 核心模块相关开发及维护，偶尔参与到前端开发，与第三方系统的组织架构同步，第三方网盘集成，单点，外部认证等集成类功能开发",
+        "`SMC 安全信息系统`<p><p/>项目描述: SMC 是一个日志信息中心，主要的功能是监控服务器和邮件系统的安全问题，如磁盘使用情况、CPU 使用情况，用户暴力破解登录行为检测，异地登录行为，弱密码用户统计，垃圾邮件及钓鱼邮件统计，使用 Filebeat + Logstash 上报日志到 ElasticSearch 服务器，前端使用 Element-UI + Vuejs，后端接口使用 Spring-boot<p/>负责内容: 参与 Elasticsearch 基础搭建及对接 Elasticsearch 部分接口设计及开发工作，保证开发进度及把关开发质量",
+        "`DS 邮件投递系统 V3.0`<p/>项目描述: 主要功能是批量邮件投递任务的处理，银行账单日定时投递，投递结果统计，投递任务状态控制（如暂停，取消，开启），同时对外提供批量投递的接口满足客户的其他投递需求，针对投递任务量大的客户（月投递量达 3000 万），引入 Kafka 中间消息中间件，并对应的增加多个工作投递机器进行任务处理。因发送频率过高会被第三方邮件系统限制，会将当次的投递任务放到重试队列中等待下一次重试<p/>负责内容: 主要负责投递性能改造方案设计和开发，对外提供的投递接口从原来的同步方式改为异步回调方式，根据银行的业务，将投递邮件分为模板加数据方式，避免因邮件的正文过大导致请求过多占用网络带宽问题。引入 Kafka 消息队列中间件，从原来的单机多线程改为多机多线程的并发方式加快账单邮件的投递速度",
+        "`Calendar 日程同步系统`<p/>项目描述: 主要功能是对接客户维护的 Kafka 消息队列中间件，通过消息主题与客户的 iMip 日程系统及 Exchange 邮箱系统同步日程数据，涉及到单个日程数据同步，周期性日程同步，例外日程同步，共享日程授权同步，推送失败重试，消费消息去重等功能。日程同步系统主要使用 Spring-boot 框架消费 Kafka 中的消息，并对内部系统提供消息的接口服务<p/>负责内容: 主要负责日程同步系统的方案沟通及对接，程序设计及开发，从开发到上线的总体流程把控，任务划分及分配的开发任务管理，提供上线后的日常维护及技术支持"
+      ]
+    },
+    {
+      "type": "fulltime",
+      "techtype": "backend",
+      "place": "广州文思海辉科技有限公司",
+      "start": "2014.06",
+      "end": "2015.05",
+      "name": "Java 开发工程师",
+      "description": [
+        "`Payment Service`<p/>项目描述: 通过上游数据及本地账单模板生成特定的账单文件，并通过 MQ 推送到下游<p/>负责内容: 账单文件的开发、维护及测试"
+      ]
+    },
+    {
+      "type": "fulltime",
+      "techtype": "backend",
+      "place": "广州华南资讯科技有限公司",
+      "start": "2011.12",
+      "end": "2014.06",
+      "name": "Java 开发工程师",
+      "description": [
+        "`广东省常住人口系统`<p/>项目描述: 基于公安内网对公安行业的户口登记，户口审批，身份证管理，地址管理，各类证件和报表进行开发改造。系统中业务逻辑复杂，使用润乾工具实现全打和套打生成相应的统计报表<p/>负责内容: 证件打印、业务代码开发及报表统计数据处理及打印",
+        "`广东省级应用系统`<p/>项目描述: 基于原来的省级应用系统做二次开发，用于政府内部人员对身份证打包制证、特殊人员登记等等的业务管理<p/>负责内容: 证件打印、业务代码开发"
+      ]
+    },
+    {
+      "type": "project",
+      "techtype": "backend",
+      "project_type": "personal",
+      "name": "JSQL | JDBC SQL Framework",
+      "source": "https://github.com/icuter/jsql",
+      "description": [
+        "一个基于 Java 开发的 JDBC 框架，使用建造者模式代替传统的 SQL 拼接",
+        "适配的数据库包括 Cubrid SQLite DB2 Derby H2 MariaDB MySQL Oracle PostgreSQL SQLServer2012"
+      ],
+      "stack": [
+        "Java"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "type": "backend",
+      "item": [
+        {
+          "summary": "`Java / Server`",
+          "description": [
+            "JVM GC Collector / Bytecode / Classloader / Concurrent",
+            "Spring / SpringMVC / SpringBoot",
+            "NIO / Netty",
+            "Jersey / Jdk Http Server",
+            "Design Pattern"
+          ]
+        },
+        {
+          "summary": "`Data`",
+          "description": [
+            "熟悉使用 MySQL 及其调优，理解事务、索引及其内存分布的基本原理",
+            "Redis / Redis HA / Redis Cluster",
+            "Elastic Search",
+            "Kafka"
+          ]
+        },
+        {
+          "summary": "`Distributed Technology`",
+          "description": [
+            "Dubbo",
+            "Spring Cloud",
+            "Zookeeper"
+          ]
+        },
+        {
+          "summary": "`Algorithm`",
+          "description": [
+            "KMP / AC 自动机",
+            "Boom Filter",
+            "哈夫曼编码",
+            "Back Tracking / Greedy / DP",
+            "Array / Link / Stack / Tree / Graph"
+          ]
+        },
+        {
+          "summary": "`Protocol`",
+          "description": [
+            "HTTP",
+            "TCP",
+            "Websocket",
+            "JSON / MessagePack",
+            "ProtoBuff",
+            "MIME",
+            "IMAP/POP3/SMTP",
+            "CalDAV"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frontend",
+      "item": [
+        {
+          "summary": "`JavaScript / CSS / HTML`",
+          "description": [
+            "jQuery",
+            "Nodejs",
+            "Npm",
+            "BackboneJS / underscore"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "codemanager",
+      "item": [
+        "六年 Linux 使用经验，熟悉常用命令与配置，能编写 Bash 脚本",
+        "熟悉使用 Git / GitLab / GitLab CI/CD",
+        "Maven / Ant / Proguard"
+      ]
     }
   ],
   "education": [
@@ -49,121 +191,6 @@
         "粤语/普通话",
         "英语阅读流畅，平时较多查看英语技术文档及偶尔参与开源社区问题讨论",
         "英语口语简单交流"
-      ]
-    }
-  ],
-  "experience": [
-    {
-      "type": "fulltime",
-      "techtype": "backend",
-      "place": "论客科技（广州）有限公司 | Coremail",
-      "start": "2015.05",
-      "end": "NOW",
-      "name": "Java 资深开发工程师",
-      "description": [
-        "邮件系统核心代码开发与维护<br/>主要使用 Java 开发，自研 NIO 服务，自研 MVC 框架",
-        "SMC 安全信息系统功能模块设计开发及项目管理",
-        "邮件投递系统 V3.0 投递性能改造方案设计和开发",
-        "日程同步系统方案沟通及对接，程序设计与开发维护"
-      ]
-    },
-    {
-      "type": "fulltime",
-      "techtype": "backend",
-      "place": "广州文思海辉科技有限公司",
-      "start": "2014.06",
-      "end": "2015.05",
-      "name": "Java 开发工程师",
-      "description": [
-        "负责账单系统的开发及测试"
-      ]
-    },
-    {
-      "type": "fulltime",
-      "techtype": "backend",
-      "place": "广州华南资讯科技有限公司",
-      "start": "2011.12",
-      "end": "2014.06",
-      "name": "Java 开发工程师",
-      "description": [
-        "广东省常住人口系统日常的开发及维护",
-        "广东省级应用日常的开发及维护"
-      ]
-    },
-    {
-      "type": "project",
-      "techtype": "backend",
-      "project_type": "personal",
-      "name": "JSQL | JDBC SQL Framework",
-      "source": "https://github.com/icuter/jsql",
-      "description": [
-        "一个基于 Java 开发的 JDBC 框架，使用建造者模式代替传统的 SQL 拼接",
-        "适配的数据库包括 Cubrid SQLite DB2 Derby H2 MariaDB MySQL Oracle PostgreSQL SQLServer2012"
-      ],
-      "stack": [
-        "Java"
-      ]
-    }
-  ],
-  "skills": [
-    {
-      "type": "frontend",
-      "item": [
-        {
-          "summary": "`HTML` / `CSS`",
-          "description": [
-            "能够编写语义化的 `HTML`，且代码布局清晰。",
-            "能通过个人的 HTML 查找手册，快速定位开发中所遇到的问题",
-            "能使用已标准化的 `HTML5` / `CSS3` 新特性进行业务逻辑开发",
-            "CSS 开发部分遵循 `BEM` 命名规则，并有自己的规范"
-          ]
-        },
-        {
-          "summary": "`ECMAScript`（`JavaScript`）",
-          "description": [
-            "较为熟悉 `ECMAScript`(`JavaScript`)，并对 ES6 部分标准有所了解",
-            "JavaScript 开发严格遵循自己的一套开发规范。该规范是基于部分大公司的规范所总结，如 Airbnb、Idiomatic 等。"
-          ]
-        },
-        {
-          "summary": "`React + Webpack`",
-          "description": [
-            "熟悉分析并设计 `ReactJS` 中组件间的数据流动",
-            "掌握 `Webpack` 的构建功能，并了解 `Router` 及 `Redux`。"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "backend",
-      "item": [
-        {
-          "summary": "`PHP`",
-          "description": [
-            "熟悉使用 `Laravel` 框架搭建服务器后台，并书写 API",
-            "有使用 `ThinkPHP` 建立简单后台管理系统的经验"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "miscellaneous",
-      "item": [
-        "两年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
-        "两年设计经验，能使用 `Photoshop` / `Illustrator` 完成复杂平面设计",
-        "熟悉使用 `Git` / `GitHub` / `Gitter` / `GitBook` 等协助开发工具",
-        "..."
-      ]
-    }
-  ],
-  "about": [
-    {
-      "type": "links",
-      "item": [
-        "[`Website`](http://aleen42.github.io/pc.html)",
-        "[`Personal Wiki`](https://aleen42.gitbooks.io/personalwiki/content/)",
-        "[`JavaScript Guide`](https://aleen42.gitbooks.io/javascript/content/)",
-        "[`Translations`](https://aleen42.gitbooks.io/personalwiki/content/translation/translation.html)"
       ]
     }
   ]
