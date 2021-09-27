@@ -94,38 +94,39 @@
         {
           "summary": "`Java / Server`",
           "description": [
-            "JVM GC Collector / Bytecode / Classloader / Concurrent",
+            "了解 JVM 的 GC 内存回收器 / 字节码 / 类加载器",
+            "熟悉并发编程",
             "Spring / SpringMVC / SpringBoot",
-            "NIO / Netty",
-            "Jersey / Jdk Http Server",
-            "Design Pattern"
+            "熟悉 Java NIO",
+            "了解 Netty 的基本原理及使用",
+            "熟悉设计模式"
           ]
         },
         {
           "summary": "`Data`",
           "description": [
             "熟悉使用 MySQL 及其调优，理解事务、索引及其内存分布的基本原理",
+            "熟悉使用 Kafka，并有实际项目经验",
             "Redis / Redis HA / Redis Cluster",
-            "Elastic Search",
-            "Kafka"
+            "Elastic Search 有实际项目经验"
           ]
         },
         {
           "summary": "`Distributed Technology`",
           "description": [
-            "Dubbo",
-            "Spring Cloud",
-            "Zookeeper"
+            "了解 Dubbo 服务发现注册及 RPC 调用",
+            "了解 Spring Cloud 网关、注册中心、配置中心、服务治理、限流熔断控制",
+            "了解 Zookeeper 注册选举的基本原理"
           ]
         },
         {
           "summary": "`Algorithm`",
           "description": [
-            "KMP / AC 自动机",
-            "Boom Filter",
-            "哈夫曼编码",
-            "Back Tracking / Greedy / DP",
-            "Array / Link / Stack / Tree / Graph"
+            "最短路径算法 | Dijkstra / KMP / AC 自动机",
+            "布隆过滤器 | Boom Filter",
+            "哈夫曼编码 | Huffman coding",
+            "回溯算法 | Back Tracking / 贪心算法 | Greedy / 动态规划 | DP",
+            "数组 | Array / 链表 | Link / 栈 | Stack / 树 | Tree / 图 | Graph"
           ]
         },
         {
@@ -161,8 +162,8 @@
       "type": "codemanager",
       "item": [
         "六年 Linux 使用经验，熟悉常用命令与配置，能编写 Bash 脚本",
-        "熟悉使用 Git / GitLab / GitLab CI/CD",
-        "Maven / Ant / Proguard"
+        "熟悉使用 Git / GitLab / GitLab CI/CD 管理代码及发布",
+        "常用 Maven / Ant / Proguard 构建部署程序"
       ]
     }
   ],
