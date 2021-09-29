@@ -34,17 +34,23 @@ function getLocals(locale) {
   return locals;
 }
 
-gulp.task('jade_zh_CN', () => gulp.src('./src/jade/index.jade')
-    .pipe(plugins.jade({locals: getLocals('zh-CN')}))
-    .pipe(gulp.dest('./dist/zh')));
+gulp.task('jade_zh_CN',
+  () => gulp.src('./src/jade/index.jade')
+                .pipe(plugins.jade({locals: getLocals('zh-CN')}))
+                .pipe(gulp.dest('./dist/zh'))
+);
 
-gulp.task('jade_en_US', () => gulp.src('./src/jade/index.jade')
-    .pipe(plugins.jade({locals: getLocals('en-US')}))
-    .pipe(gulp.dest('./dist/en')));
+gulp.task('jade_en_US',
+  () => gulp.src('./src/jade/index.jade')
+                .pipe(plugins.jade({locals: getLocals('en-US')}))
+                .pipe(gulp.dest('./dist/en'))
+);
 
 /************* less to css  ********************/
-const lessPath = [path.join(__dirname, 'src', 'less', 'includes'),
-                path.join(__dirname, 'src', 'less', 'components')];
+const lessPath = [
+  path.join(__dirname, 'src', 'less', 'includes'),
+  path.join(__dirname, 'src', 'less', 'components')
+];
 
 function less2css(srcPath, destPath, debug) {
   if(!debug) {

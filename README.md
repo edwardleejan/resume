@@ -7,10 +7,17 @@ Written with Gulp, Less, and Jade.
 ## Build
 
 1. Run `npm install` to install the dependencies.
-2. Fill your resume data in `resume.json`.
+2. Fill your resume data in `resume_en-US.json` or `resume_zh-CN.json`.
 3. Run `npm run build` to generate the static web page(`dist/${locale}/index.html`), ${locale} would be `en`/`zh`.
-4. Run `npm run dev` and visit `http://localhost:8000` if you want to see it hosted locally(make sure the port 8000 is not taken).
-5. Run `npm run watch` and visit `http://localhost:8000` and auto build while you edited.
+4. Run `npm run dev` and visit `http://localhost:8000/zh` if you want to see it hosted locally(make sure the port 8000 is not taken).
+5. Run `npm run watch` and visit `http://localhost:8000/zh` and auto build while you edited.
+6. Available urls as following
+
+    |URL|Comments|
+    |---|--------|
+    |http://localhost:8000/en| English Resume|
+    |http://localhost:8000/zh| Chinese Resume|
+
 
 ## Deploy to GitHub Pages
 
