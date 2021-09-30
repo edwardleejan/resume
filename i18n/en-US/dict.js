@@ -11,7 +11,7 @@ module.exports = {
         "desktop": "Desktop Development",
         "frontend": "Frontend Development",
         "backend": "Backend Development",
-        "codemanager": "Code Manager",
+        "codemanager": "Code Management",
         "miscellaneous": "Miscellaneous",
         "hobbies": "Hobbies",
         "postproduction": "Post Production",
@@ -35,23 +35,23 @@ module.exports = {
     section_names: {
         "education": {
             "ch": "Education",
-            "en": "Education"
+            "en": "University"
         },
         "language": {
             "ch": "Language",
-            "en": "Language"
+            "en": "Communication"
         },
         "profile": {
             "ch": "Profile",
-            "en": "Profile" 
+            "en": "About me"
         },
         "experience": {
             "ch": "Experience",
-            "en": "Experience"
+            "en": "Companies and projects"
         },
         "skills": {
             "ch": "Skills",
-            "en": "Skills"
+            "en": "Programming knowledge"
         },
         "about": {
             "ch": "Introduce",

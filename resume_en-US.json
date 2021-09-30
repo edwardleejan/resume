@@ -28,7 +28,7 @@
       "type": "profile",
       "description": [
         "I have been engaged in Java software development for 9 years. I am currently working in Lunkr Technology, as the development leader of one of the teams in the department, helping the team overcome technical difficulties and ensure the stability of the project.",
-        "I am responsible, focus on my work, focus on collaboration, love creative ideas, good at team work and communication, strong adaptability, strong self-learning motivation, and have won three years of outstanding employee awards in my current company.",
+        "I am responsible, concentrate on my work, team collaboration, love creative ideas, good at team work and communication, strong adaptability, strong self-learning motivation, and have won three years of outstanding employee awards in my current company.",
         "Sometimes involve in front-end development, close to full-stack development engineer, but the current career planning is aimed at architect."
       ]
     }
@@ -42,10 +42,10 @@
       "end": "NOW",
       "name": "Java Senior Development",
       "description": [
-        "`Coremail Mail System`<p/>Description: Enterprise-oriented mailbox system, the main functions include mail sending and receiving, organization management, schedule, secondary verification, enterprise network disk, mail collection, etc. It also provides SMTP/IMAP/POP3 services, divided into front-end, Java back-end and C++ back-end , To achieve product iteration based on the three major requirements of operation and maintenance platform, customers and products. The front-end includes browser web pages, Window clients, mobile phones and other products. The Java back-end is mainly based on Java NIO, Socket network programming and independently developed private protocol high-performance server support, and independently developed the MVC framework for PC and mobile interface calls. Few frameworks, customized interfaces are implemented using Spring / Spring-boot / Apache-cxf framework. <p/>Responsibility: In charge of the development and maintenance of Java core modules, occasionally participating in front-end development, synchronizing with the organizational structure of third-party systems, third-party network disk integration, single point, external certification and other integrated function development.",
-        "`SMC Security Manager Center`<p><p/>Description: SMC is a log information center. The main function is to monitor the security issues of the server and the mail system, such as disk usage, CPU usage, user brute force login behavior detection, remote login behavior, weak password user statistics, spam and phishing emails Statistics, use Filebeat + Logstash to report logs to ElasticSearch server, front-end uses Element-UI + Vuejs, back-end interface uses Spring-boot<p/>Responsibility: Participate in the basic construction of Elasticsearch and part of the interface design and development work of docking Elasticsearch to ensure the development progress and check the development quality.",
-        "`DS Mail Delivery System V3.0`<p/>Description: The main function is the processing of batch mail delivery tasks, the daily delivery of bank bills, the statistics of delivery results, the status control of delivery tasks (such as pause, cancel, and open). At the same time, it provides an interface for batch delivery to meet other delivery needs of customers, and for delivery tasks A large number of customers (monthly delivery reaches 30 million), introduce Kafka intermediate messaging middleware, and correspondingly increase multiple work delivery machines for task processing. Because the sending frequency is too high, it will be restricted by the third-party mail system, and the current delivery task will be placed in the retry queue to wait for the next retry.<p/>Responsibility: Mainly responsible for the design and development of the delivery performance improvement plan. The external delivery interface has been changed from the original synchronous method to the asynchronous callback method. According to the bank's business, the delivery mail is divided into a template and data method to avoid requests caused by excessively large mail bodies. Excessive use of network bandwidth issues. Introduce Kafka message queue middleware, change from the original single machine multi-threaded to multi-machine multi-threaded concurrent mode to speed up the delivery of bill mail.",
-        "`Schedule synchronization system`<p/>Description: The main function is to connect to the Kafka message queue middleware maintained by the customer, and synchronize the schedule data with the customer's iMip schedule system and the Exchange mailbox system through the message subject, which involves single schedule data synchronization, periodic schedule synchronization, exception schedule synchronization, shared schedule authorization synchronization , Push failure retry, consumption message deduplication and other functions. The schedule synchronization system mainly uses the Spring-boot framework to consume messages in Kafka and provides message interface services for internal systems. <p/>Responsibility: Mainly responsible for the plan communication and docking of the schedule synchronization system, program design and development, overall process control from development to online, task division and allocation of development task management, and daily maintenance and technical support after online."
+        "`Coremail Mail System`<p/>Description: Enterprise-oriented mailbox system, the main functions include mail sending and receiving, organization management, schedule, secondary verification, enterprise network disk, mail collection, etc. It also provides SMTP/IMAP/POP3 services, divided into front-end, Java back-end and C++ back-end , To achieve product iteration based on the three major requirements of operation and maintenance platform, customers and products. The front-end includes browser web pages, Window clients, mobile phones and other products. The Java back-end is mainly based on Java NIO, Socket network programming and independently developed private protocol high-performance server support, and independently developed the MVC framework for PC and mobile interface calls. Few frameworks, customized interfaces are implemented using Spring / Spring-boot / Apache-cxf framework. <p/>Responsibility: In charge of the development and maintenance of Java core modules, occasionally participating in front-end development, synchronizing with the organizational structure of third-party systems, third-party network disk and SSO integration, external certification and other integrated function development.",
+        "`SMC Security Manager Center`<p><p/>Description: SMC is a log information center. The main function is to monitor the security issues of the server and the mail system, such as disk usage, CPU usage, user brute force login behavior detection, off-site login behavior, weak password user statistics, spam and phishing emails Statistics, use Filebeat and Logstash to report logs to ElasticSearch server, front-end uses Element-UI, back-end interface uses Spring-boot.<p/>Responsibility: Participate in the basic construction of Elasticsearch and part of the interface design and development work of docking Elasticsearch to ensure the development progress and check the development quality.",
+        "`DS Mail Delivery System V3.0`<p/>Description: The main function is the processing of batch mail delivery tasks, the daily delivery of bank bills, the statistics of delivery results, the status control of delivery tasks (such as pause, cancel, and resume). At the same time, it provides an API for batch delivery to meet other delivery needs of customers, and for a large number of delivery tasks (monthly delivery reaches 30 million), introduce Kafka messaging system, and add more delivery consumers speed up task processing. Because the sending frequency is too high, it will be restricted by the third-party mail system, and the current delivery task will be placed in the retry queue to wait for the next retry.<p/>Responsibility: Mainly responsible for the design and development of the delivery performance improvement plan. The delivery APIs have been changed from the original synchronous method to the asynchronous callback method. According to the bank's business, the delivery mail is divided into a template and data method to avoid using too much network bandwidth, which also make network transportation more lightweight. Introduce Kafka messaging system, change from the original single machine multi-threaded to multi-machine multi-threaded concurrent mode to speed up the delivery of bill mail.",
+        "`Schedule synchronization system`<p/>Description: The main function is to connect to the Kafka messaging system, and synchronize the schedule data with the iMIP schedule system and the Exchange mailbox system through the message subject, which involves single schedule data synchronization, recurrent schedule synchronization, exception schedule synchronization, shared schedule authorization synchronization, failure retry, consumption message deduplication and other functions. The schedule synchronization system uses the Spring-boot framework to consume messages in Kafka and provides message APIs for internal systems. <p/>Responsibility: Mainly responsible for the plan communication and design of the schedule synchronization system, program design and development, overall process control from development to production deployment, development tasks assigning, and daily maintenance and technical support after online."
       ]
     },
     {
@@ -81,7 +81,7 @@
       "end": "2014.06",
       "name": "Java Development Engineer",
       "description": [
-        "`Permanent Resident Population System of Guangdong Province`<p/>Description: Based on the public security intranet, the public security industry's household registration, household registration approval, ID card management, address management, various certificates and reports are developed and transformed. The business logic in the system is complex, and run-drying tools are used to realize full printing and pattern printing to generate corresponding statistical reports. <p/>Responsibility: Certificate printing, business code development and report statistical data processing and printing.",
+        "`Permanent Resident Population System of Guangdong Province`<p/>Description: Based on the public security intranet to develop the public security industry's household registration, household registration approval, ID card management, address management, various certificates and reports functions. The business logic in the system is complex, and Ruan Qian tool are used to realize full printing and template printing to generate statistical reports. <p/>Responsibility: Certificate printing, business code development and report statistical data processing and printing.",
         "`Guangdong Provincial Application System`<p/>Description: Based on the original provincial application system for secondary development, it is used for the business management of internal government personnel on ID card packaging and certification, special personnel registration, etc. <p/>Responsibility: Certificate printing, business code development."
       ]
     }
@@ -93,28 +93,28 @@
         {
           "summary": "`Java`",
           "description": [
-            "Familiar with Java class library, concurrent programming, Java <em>NIO</em>",
-            "Familiar with and commonly used <em>Spring, SpringBoot, SpringMVC</em>",
-            "Familiar with <em>design patterns</em>, such as Builder, Proxy, Adapter, Mediator",
-            "Understand <em>JVM</em>'s GC memory collector, bytecode and class loader",
-            "Understand the basic concept and use of <em>Netty</em>"
+            "Familiar with Java class library, concurrent programming, Java NIO",
+            "Familiar with and commonly used Spring, SpringBoot, SpringMVC",
+            "Familiar with design patterns, such as Builder, Proxy, Adapter, Mediator",
+            "Understand JVM's GC memory collector, bytecode and class loader",
+            "Understand the basic concept and use of Netty"
           ]
         },
         {
           "summary": "`Data`",
           "description": [
-            "Familiar with the use of <em>MySQL</em> and its tuning, understand the basic mechanism of transactions, indexes and memory model",
+            "Familiar with the use of MySQL and its tuning, understand the basic mechanism of transactions, indexes and memory model",
             "Familiar with Kafka and have actual project experience on it",
-            "Know about use of <em>Redis</em>, <em>Redis HA</em> and <em>Redis Cluster</em>",
-            "Have actual project experience of <em>Elastic Search</em>"
+            "Know about use of Redis, Redis HA and Redis Cluster",
+            "Have actual project experience of Elastic Search"
           ]
         },
         {
           "summary": "`Distributed Technology`",
           "description": [
-            "Know about service discovery/register/RPC invoking of <em>Dubbo</em>",
-            "Know about <em>Spring Cloud</em> gateway, register center, config center, flow-limiting and fusing control",
-            "Understand the basic mechanism of <em>Zookeeper</em> registration election"
+            "Know about service discovery/register/RPC invoking of Dubbo",
+            "Know about Spring Cloud gateway, register center, config center, flow-limiting and fusing control",
+            "Understand the basic mechanism of Zookeeper registration election"
           ]
         },
         {
