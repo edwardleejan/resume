@@ -60,10 +60,10 @@ module.exports = {
     },
     lt_ie8_comment: "You are using IE8 or lower version of IE, which is not supported.",
     dict: {
-        source_code: "源代码",
+        source_code: "Source Code",
         demo: "Demo"
     },
     project_type: {
-        "personal": "个人开源项目"
+        "personal": "Personal Open Source Project"
     }
 };
